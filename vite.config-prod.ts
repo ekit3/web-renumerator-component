@@ -12,7 +12,7 @@ export default defineConfig({
     lib: {
       entry: "src/lib/index.ts", // Votre point d'entrée principal
       name: "renumerator-component",
-      fileName: (format) => `my-custom-element.${format}.js`,
+      fileName: (format) => `renumerator-component.${format}.js`,
     },
     rollupOptions: {
       //external: ["svelte/internal"],

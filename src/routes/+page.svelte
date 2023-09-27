@@ -25,10 +25,6 @@
 
 <style>
 
-  html {
-    background: red;
-  }
-
   .component {
     display: flex;
     justify-content: center;

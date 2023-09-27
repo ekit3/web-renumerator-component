@@ -43,7 +43,10 @@
 </div>
   
 <style>
-  .renumerator {
+
+  @import "smui.css";
+
+ .renumerator {
     display: flex;
     padding: 80px 40px;
     width: calc(100% - 80px);
