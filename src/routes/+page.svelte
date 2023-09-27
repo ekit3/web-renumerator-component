@@ -1,13 +1,13 @@
 <svelte:options customElement="renumerator-component" />
 
 <script lang="ts">
-  import { RateManagerFactory, Company } from '../classes/rateManagerFactory'
-    import type { IRateManager } from '../interfaces/IRateManager';
-
+  import { RateManagerFactory } from '../classes/rateManagerFactory'
+  import type { IRateManager } from '../interfaces/IRateManager';
+  import type { Company } from '../enums/company'
   import Renumerator from '../components/Renumerator.svelte';
   import Pay from '../components/Pay.svelte';
-
-  let rateManager: IRateManager = RateManagerFactory.create(Company.EKITE);
+  export let company: string;
+  let rateManager: IRateManager = RateManagerFactory.create(company as Company);
   let selectedDevType: string;
   let experience: number;
   let amount: number;

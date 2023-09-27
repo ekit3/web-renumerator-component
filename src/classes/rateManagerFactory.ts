@@ -1,11 +1,7 @@
 import { Ekite } from "./implementations/ekite";
 import { Storm } from "./implementations/storm";
 import type { RateManager } from "./rateManager";
-
-export enum Company {
-  EKITE,
-  STORM,
-}
+import { Company } from "../enums/company";
 
 export class RateManagerFactory {
   static create(type: Company): RateManager {
@@ -15,6 +11,9 @@ export class RateManagerFactory {
       case Company.STORM:
         return new Storm();
       default:
+        console.warn(
+          "No company props props defined in component initialisation : default EKITE"
+        );
         return new Ekite();
     }
   }
