@@ -1,45 +1,46 @@
 <script lang="ts">
-    import Select, { Option } from '@smui/select';
-    import type { IRateManager } from '../interfaces/IRateManager';
-    
-    export let rateManager: IRateManager;
-    export let experience = 3;
-    export let selectedDevType: string;
-    let minExperience = rateManager.getMinExperienceValue();
-    let minTjm = rateManager.getMinTjmValue();
-    const devTypes = rateManager.getRateList();
-  </script>
-  <div class="renumerator">
-    <span class="title">Votre métier</span>
-  
-    <Select 
-      class="shaped-outlined"
-      variant="outlined"
-      bind:value={selectedDevType}
-    >
-      {#if !selectedDevType}
-        <Option value="" disabled>Sélectionnez un poste</Option>
-      {/if}
-      {#each Array.from(devTypes.keys()) as devType}
-        <Option value={devType}>{devType}</Option>
-      {/each}
-    </Select>
-  
-    <div class="container">
-      <div class="half-block">
-        <span class="title">Année d'expérience</span>
-        <div class="flex">
-          <button on:click={() => experience = Math.max(minExperience, experience - 1)}>
-            <img src="minus-icon.svg" alt="Minus Svg icon">
-          </button>
-          <span>{experience}</span>
-          <button on:click={() => experience += 1}>
-            <img src="plus-icon.svg" alt="Plus Svg icon">
-          </button>
-        </div>
+  import Select, { Option } from '@smui/select';
+  import type { IRateManager } from '../interfaces/IRateManager';
+  import minusSvg from '../images/minus-icon.svg?url';
+  import plusSvg from '../images/plus-icon.svg?url';
+  export let rateManager: IRateManager;
+  export let experience = 3;
+  export let selectedDevType: string;
+  let minExperience = rateManager.getMinExperienceValue();
+  let minTjm = rateManager.getMinTjmValue();
+  const devTypes = rateManager.getRateList();
+</script>
+<div class="renumerator">
+  <span class="title">Votre métier</span>
+
+  <Select 
+    class="shaped-outlined"
+    variant="outlined"
+    bind:value={selectedDevType}
+  >
+    {#if !selectedDevType}
+      <Option value="" disabled>Sélectionnez un poste</Option>
+    {/if}
+    {#each Array.from(devTypes.keys()) as devType}
+      <Option value={devType}>{devType}</Option>
+    {/each}
+  </Select>
+
+  <div class="container">
+    <div class="half-block">
+      <span class="title">Année d'expérience</span>
+      <div class="flex">
+        <button on:click={() => experience = Math.max(minExperience, experience - 1)}>
+          <img src={minusSvg} alt="Minus Svg icon">
+        </button>
+        <span>{experience}</span>
+        <button on:click={() => experience += 1}>
+          <img src={plusSvg} alt="Plus Svg icon">
+        </button>
       </div>
     </div>
   </div>
+</div>
   
 <style>
   .renumerator {

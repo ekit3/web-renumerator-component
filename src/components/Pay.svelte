@@ -1,12 +1,12 @@
-<script>
-    export let amount = 450;
-  </script>
+<script lang="ts">
+  export let amount = 450;
+</script>
   
-  <div class="pay">
-    <span class="title">Votre salaire annuel brut</span>
-    <span class="amount">{amount} €</span>
-    <button>Envie de nous rejoindre ?</button>
-  </div>
+<div class="pay">
+  <span class="title">Votre salaire annuel brut</span>
+  <span class="amount">{amount} €</span>
+  <button>Envie de nous rejoindre ?</button>
+</div>
   
 <style>
   .pay {

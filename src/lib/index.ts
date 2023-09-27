@@ -5,5 +5,6 @@ class Renumerator extends HTMLElement {
     new RenumeratorComponent({ target: this });
   }
 }
-
-customElements.define("renumerator", Renumerator);
+if (!customElements.get("renumerator-component")) {
+  customElements.define("renumerator-component", Renumerator);
+}

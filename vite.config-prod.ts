@@ -1,0 +1,21 @@
+import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import sveltePreprocess from "svelte-preprocess";
+
+export default defineConfig({
+  plugins: [
+    svelte({
+      preprocess: sveltePreprocess(),
+    }),
+  ],
+  build: {
+    lib: {
+      entry: "src/lib/index.ts", // Votre point d'entrée principal
+      name: "renumerator-component",
+      fileName: (format) => `my-custom-element.${format}.js`,
+    },
+    rollupOptions: {
+      //external: ["svelte/internal"],
+    },
+  },
+});
