@@ -13,7 +13,6 @@
   let amount: number;
   $: amount = experience * (rateManager?.getRate(selectedDevType) || 0);
 </script>
-
   <div class="component">
     <div class="block">
       <Renumerator bind:selectedDevType bind:experience rateManager={rateManager} />
