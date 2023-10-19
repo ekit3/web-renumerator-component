@@ -39,9 +39,9 @@
     padding: 16px 24px;
     background-color: white;
     border-radius: 11px;
-    border: 0px;
+    border: 0;
     color: #000;
-    font-family: Montserrat;
+    font-family: Montserrat,serif;
     font-size: 16px;
     font-weight: 700;
   }

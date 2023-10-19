@@ -1,39 +1,39 @@
 <script lang="ts">
-  import Select, { Option } from '@smui/select';
-  import type { IRateManager } from '../interfaces/IRateManager';
+  import Select, {Option} from '@smui/select';
+  import type {IRateManager} from '../interfaces/IRateManager';
   import minusSvg from '../images/minus-icon.svg?url';
   import plusSvg from '../images/plus-icon.svg?url';
+
   export let rateManager: IRateManager;
-  export let experience = 3;
+  export let experience = 2;
   export let selectedDevType: string;
   let minExperience = rateManager.getMinExperienceValue();
-  let minTjm = rateManager.getMinTjmValue();
   const devTypes = rateManager.getRateList();
-  
-    /*function myFunction(this: HTMLElement) {
-      const link = this.ownerDocument.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'smui.css';
-      link.onload = () => {
-        console.log('coucou');
-        // Réactivez le rendu de vos composants ici
-      };
-    }
-    myFunction.call(this);*/
+
+  /*function myFunction(this: HTMLElement) {
+    const link = this.ownerDocument.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'smui.css';
+    link.onload = () => {
+      console.log('coucou');
+      // Réactivez le rendu de vos composants ici
+    };
+  }
+  myFunction.call(this);*/
 </script>
 <div class="renumerator">
   <span class="title">Votre métier</span>
 
-  <Select 
-    class="shaped-outlined"
-    variant="outlined"
-    bind:value={selectedDevType}
+  <Select
+      class="shaped-outlined"
+      variant="outlined"
+      bind:value={selectedDevType}
   >
     {#if !selectedDevType}
       <Option value="" disabled>Sélectionnez un poste</Option>
     {/if}
-    {#each Array.from(devTypes.keys()) as devType}
-      <Option value={devType}>{devType}</Option>
+    {#each devTypes as devType}
+      <Option value={devType.name}>{devType.name}</Option>
     {/each}
   </Select>
 
@@ -52,12 +52,12 @@
     </div>
   </div>
 </div>
-  
+
 <style>
 
   @import "smui.css";
 
- .renumerator {
+  .renumerator {
     display: flex;
     padding: 80px 40px;
     width: calc(100% - 80px);
@@ -65,7 +65,7 @@
     flex-shrink: 0;
     border-radius: 32px;
     background: linear-gradient(180deg, #1D211A 0%, #1D2E0E 100%);
-    box-shadow: 0px 24px 44px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 24px 44px 0 rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(22px);
     flex-direction: column;
   }
@@ -77,6 +77,7 @@
   .renumerator .half-block {
     margin-top: 40px;
   }
+
   .renumerator .half-block span.title {
     margin-bottom: 40px;
     text-align: center;
@@ -112,7 +113,7 @@
   }
 
   /* overide selectBox */
-  
+
   * :global(.mdc-select__dropdown-icon-graphic) {
     fill: white !important;
   }
@@ -121,10 +122,10 @@
     color: white !important;
   }
 
-  * :global(.mdc-select__selected-text){
+  * :global(.mdc-select__selected-text) {
     font-size: 16px;
     font-weight: 500;
-    font-family: Montserrat;
+    font-family: Montserrat,serif;
   }
 
   * :global(.mdc-deprecated-list-item--selected) {
@@ -150,7 +151,7 @@
   }
 
   :global(.smui-select__dropdown-icon) {
-    color: gray;
+    color: grey;
   }
 
 
@@ -170,23 +171,27 @@
   * :global(.shaped-outlined .mdc-select__anchor) {
     border-radius: 24px;
   }
+
   * :global(.shaped-outlined .mdc-text-field__input) {
     padding-left: 32px;
     padding-right: 0;
   }
+
   * :global(.shaped-outlined
     .mdc-notched-outline
     .mdc-notched-outline__leading) {
-      border-radius: 24px 0 0 24px;
-      border-color: rgba(255, 255, 255, 0.6);
-      width: 28px;
+    border-radius: 24px 0 0 24px;
+    border-color: rgba(255, 255, 255, 0.6);
+    width: 28px;
   }
+
   * :global(.shaped-outlined
     .mdc-notched-outline
     .mdc-notched-outline__trailing) {
-      border-color: rgba(255, 255, 255, 0.6);
-      border-radius: 0 24px 24px 0;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 24px 24px 0;
   }
+
   * :global(.shaped-outlined .mdc-notched-outline .mdc-notched-outline__notch) {
     border-color: rgba(255, 255, 255, 0.6);
   }
