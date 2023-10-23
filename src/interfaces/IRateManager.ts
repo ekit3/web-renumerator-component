@@ -1,6 +1,10 @@
+import type {Job} from "../classes/salaryConfig";
+
 export interface IRateManager {
-  getRate(jobName: string): number | undefined;
-  getRateList(): Map<string, number>;
+  getRate(jobName: string): Job | undefined;
+
+  getRateList(): Job[];
+
   getMinExperienceValue(): number;
-  getMinTjmValue(): number;
+  getSalary(experience: number,jobName: string): number;
 }

@@ -11,7 +11,7 @@
   let selectedDevType: string;
   let experience: number;
   let amount: number;
-  $: amount = experience * (rateManager?.getRate(selectedDevType) || 0);
+  $: amount = rateManager.getSalary(experience,selectedDevType) || 0;
 </script>
   <div class="component">
     <div class="block">
@@ -29,7 +29,7 @@
     justify-content: center;
     width: 100%;
     color: #FFF;
-    font-family: Montserrat;
+    font-family: Montserrat,serif;
     font-size: 16px;
     font-weight: 500;
   }
