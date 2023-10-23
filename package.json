@@ -8,10 +8,11 @@
     "copy-css": "cp static/smui.css dist/",
     "dev": "vite dev --port 3000",
     "build": "vite build",
-    "build-prod": "vite build --config vite.config-prod.js & npm run copy-css",
+    "build-prod": "vite build --config vite.config-prod.ts && npm run copy-css",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@smui/select": "^7.0.0-beta.15",
@@ -19,9 +20,13 @@
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.25.1",
     "@sveltejs/vite-plugin-svelte": "^2.4.6",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "@types/node": "^20.7.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-svelte": "^2.34.0",
     "smui-theme": "^7.0.0-beta.15",
-    "svelte": "^4.2.1",
+    "svelte": "^4.2.2",
     "svelte-check": "^3.4.3",
     "svelte-kit": "^1.2.0",
     "tslib": "^2.4.1",

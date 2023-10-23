@@ -21,13 +21,13 @@ export abstract class RateManager implements IRateManager {
   }
 
   getSalary(experience: number, jobName: string): number  {
-    let job = this.getRate(jobName);
+    const job = this.getRate(jobName);
     if (job) {
-      let realXP = Math.min(job.tjmGrid.length, experience) - this.config.min_experience;
-      let jobXp = job.tjmGrid[realXP];
-      let tjm = jobXp.tjm;
+      const realXP = Math.min(job.tjmGrid.length, experience) - this.config.min_experience;
+      const jobXp = job.tjmGrid[realXP];
+      const tjm = jobXp.tjm;
       console.log(tjm);
-      let salary = this.config.min_salary * 12 + (tjm - this.config.tjm_base) / 2 * (251 - 35 - this.config.group_days) * (1 + 0.1 / (52 * 5 / 12) * 25);
+      const salary = this.config.min_salary * 12 + (tjm - this.config.tjm_base) / 2 * (251 - 35 - this.config.group_days) * (1 + 0.1 / (52 * 5 / 12) * 25);
       return Math.round(salary);
     }
     return this.config.min_salary;
