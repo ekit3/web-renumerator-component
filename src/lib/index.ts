@@ -2,7 +2,7 @@ import RenumeratorComponent from "../routes/+page.svelte";
 
 class Renumerator extends HTMLElement {
   connectedCallback() {
-    let getCompany = this.getAttribute("company");
+    const getCompany = this.getAttribute("company");
     const company = getCompany != null ? getCompany : "";
     new RenumeratorComponent({ target: this, props: { company } });
   }

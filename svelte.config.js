@@ -6,6 +6,7 @@ const config = {
   compilerOptions: {
     customElement: true,
   },
+  outDir: "dist",
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
   preprocess: vitePreprocess(),

@@ -9,17 +9,6 @@
   export let selectedDevType: string;
   let minExperience = rateManager.getMinExperienceValue();
   const devTypes = rateManager.getRateList();
-
-  /*function myFunction(this: HTMLElement) {
-    const link = this.ownerDocument.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'smui.css';
-    link.onload = () => {
-      console.log('coucou');
-      // Réactivez le rendu de vos composants ici
-    };
-  }
-  myFunction.call(this);*/
 </script>
 <div class="renumerator">
   <span class="title">Votre métier</span>
@@ -54,7 +43,6 @@
 </div>
 
 <style>
-
   @import "smui.css";
 
   .renumerator {
