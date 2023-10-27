@@ -43,7 +43,8 @@
 </div>
 
 <style>
-  @import "smui.css";
+
+@import "smui.css";
 
   .renumerator {
     display: flex;
@@ -56,10 +57,6 @@
     box-shadow: 0 24px 44px 0 rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(22px);
     flex-direction: column;
-  }
-
-  .renumerator .half-block {
-    width: 50%;
   }
 
   .renumerator .half-block {
@@ -98,6 +95,7 @@
 
   .renumerator .container {
     display: flex;
+    align-self: center;
   }
 
   /* overide selectBox */
