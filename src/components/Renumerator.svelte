@@ -44,7 +44,7 @@
 
 <style>
 
-@import "smui.css";
+  @import "https://ekit3.github.io/web-renumerator-component/dist/smui.css";
 
   .renumerator {
     display: flex;

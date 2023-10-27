@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: "src/lib/index.ts", // Votre point d'entrée principal
+      entry: "src/lib/index.ts",
       name: "renumerator-component",
       fileName: (format) => `renumerator-component.${format}.js`,
     },
