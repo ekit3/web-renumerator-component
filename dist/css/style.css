@@ -1,0 +1,189 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+  body {
+    background: var(--primary-10);
+    overflow-x: hidden;
+  }
+
+  .ellipse {
+    position: absolute;
+    top: -150%;
+    left: -50%;
+    overflow: hidden;
+    height: 100%;
+    width: 200%;
+    padding-bottom: 75%;
+    background: var(--primary-110);
+    border-radius: 100%;
+  }
+
+  .ellipse .logo {
+    position: inherit;
+    display: inline-block;
+    left: 30%;
+    top: 60%;
+    width: 40%;
+  }
+
+  .ellipse::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: var(--logo-gradient);
+  }
+
+  .ellipse .title {
+    position: inherit;
+    display: inline-block;
+    width: 100%;
+    font-size: 3rem;
+    line-height: 0.175rem;
+    top: 75%;
+    text-align: center;
+    z-index: 1;
+    font-family: Montserrat, Helvetica, serif;
+    font-weight: 900;
+    color: var(--primary-10);
+    letter-spacing: 0;
+  }
+
+  .brand {
+    font-size: 6rem;
+  }
+
+  .ellipse .description {
+    position: inherit;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.3em;
+    line-height: 0.175rem;
+    top: 85%;
+    text-align: center;
+    z-index: 1;
+    font-family: Montserrat, Helvetica, serif;
+    color: var(--primary-10);
+  }
+
+  .ellipse .discover-btn {
+    position: inherit;
+    display: inline-block;
+    width: 100%;
+    font-size: 1em;
+    line-height: 0.175rem;
+    top: 93%;
+    text-align: center;
+    z-index: 1;
+    font-family: Montserrat, Helvetica, serif;
+    color: var(--primary-10);
+  }
+
+  .discover-btn a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-color: var(--primary-10);
+    color: var(--primary-10);
+    background-color: var(--shadeslight-1);
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+  }
+
+  .discover-btn a .arrow-right-alt {
+    width: 20%;
+  }
+
+  .content {
+    color: var(--shadeslight-1);
+    font-family: Montserrat, Helvetica, serif;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .content-title {
+    margin: 0 40rem;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.75rem;
+    text-align: justify;
+    width: 45%;
+  }
+
+  .content-description {
+    text-align: justify;
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .content-advantages {
+    z-index: -1;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    position: absolute;
+    width: 82%;
+    height: fit-content;
+    border-radius: 32px;
+    box-shadow: 0 24px 44px #00000040;
+    backdrop-filter: blur(44px) brightness(100%);
+    -webkit-backdrop-filter: blur(44px) brightness(100%);
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(30.35, 51.66, 12.09) 0%,
+        rgb(22, 27, 19) 50%,
+        rgb(28, 32, 25) 100%
+    );
+  }
+
+  .advantages-title {
+    margin: 2rem 2rem auto;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 900;
+  }
+
+  .advantages-pills {
+    margin: 2rem 2rem auto;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 900;
+  }
+
+  .rounded-pill {
+    display: inline-block;
+    background-color: var(--shadeslight-1);
+    font-size: 1rem;
+    border-radius: 50px;
+    padding: 0 20px;
+    color: var(--primary-10);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .rounded-pill .img-4 {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 170%;
+    font-family: Montserrat, Helvetica, serif;
+  }
+
+  .footer a {
+    color: var(--shadeslight-1);
+    padding-bottom: 2rem;
+  }
