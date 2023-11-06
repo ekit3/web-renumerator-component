@@ -183,8 +183,7 @@ function As(n, e) {
   });
 }
 function Ss(n, e, t) {
-  const i = e.toLowerCase();
-  i in n ? n[i] = typeof n[i] == "boolean" && t === "" ? !0 : t : e in n ? n[e] = typeof n[e] == "boolean" && t === "" ? !0 : t : se(n, e, t);
+  e in n ? n[e] = typeof n[e] == "boolean" && t === "" ? !0 : t : se(n, e, t);
 }
 function fn(n) {
   return /-/.test(n) ? As : de;
@@ -649,7 +648,7 @@ class bi {
     if (i) {
       const s = Math.min(i.tjmGrid.length, e) - this.config.min_experience, l = i.tjmGrid[s].tjm;
       console.log(l);
-      const r = this.config.min_salary * 12 + (l - this.config.tjm_base) / 2 * (251 - 35 - this.config.group_days) * (1 + 0.1 / (52 * 5 / 12) * 25);
+      const r = this.config.fixed_salary * 12 + (l - this.config.tjm_base) / 2 * (251 - 35 - this.config.group_days) * (1 + 0.1 / (52 * 5 / 12) * 25);
       return Math.round(r);
     }
     return this.config.min_salary;
