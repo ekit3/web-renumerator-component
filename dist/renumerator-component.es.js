@@ -654,7 +654,7 @@ class bi {
     return this.config.min_salary;
   }
 }
-const Ns = 2900, Ps = 2, Us = 0, Bs = 20, js = 290, Hs = [
+const Ns = 2900, Ps = 2, Us = 0, Bs = 20, js = 380, Hs = [
   {
     name: "Product Owner",
     tjmGrid: [
