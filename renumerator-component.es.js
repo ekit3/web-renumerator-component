@@ -915,7 +915,7 @@ const Ns = 2900, Ps = 2, Us = 0, Bs = 20, js = 380, Hs = [
       },
       {
         xp: 4,
-        tjm: 620
+        tjm: 520
       },
       {
         xp: 5,
