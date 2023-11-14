@@ -24,7 +24,7 @@
   .pay span.title {
     margin-top: 60px;
     color: #0E130B;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .pay span.amount {

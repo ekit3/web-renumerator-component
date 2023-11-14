@@ -6,8 +6,10 @@
 
   export let rateManager: IRateManager;
   export let experience = 2;
+  export let tjm = rateManager.getMinTJMValue();
   export let selectedDevType: string;
   let minExperience = rateManager.getMinExperienceValue();
+  let minTjm = rateManager.getMinTJMValue();
   const devTypes = rateManager.getRateList();
 </script>
 <div class="renumerator">
@@ -17,6 +19,7 @@
       class="shaped-outlined"
       variant="outlined"
       bind:value={selectedDevType}
+      on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}
   >
     {#if !selectedDevType}
       <Option value="" disabled>Sélectionnez un poste</Option>
@@ -30,11 +33,25 @@
     <div class="half-block">
       <span class="title">Année d'expérience</span>
       <div class="flex">
-        <button on:click={() => experience = Math.max(minExperience, experience - 1)}>
+        <button on:click={() => experience = Math.max(minExperience, experience - 1)}
+                on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}>
           <img src={minusSvg} alt="Minus Svg icon">
         </button>
         <span>{experience}</span>
-        <button on:click={() => experience += 1}>
+        <button on:click={() => experience += 1}
+                on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}>
+          <img src={plusSvg} alt="Plus Svg icon">
+        </button>
+      </div>
+    </div>
+    <div class="half-block">
+      <span class="title">TJM</span>
+      <div class="flex">
+        <button on:click={() => tjm = Math.max(minTjm, tjm - 10)}>
+          <img src={minusSvg} alt="Minus Svg icon">
+        </button>
+        <span>{tjm}</span>
+        <button on:click={() => tjm += 10}>
           <img src={plusSvg} alt="Plus Svg icon">
         </button>
       </div>
@@ -60,7 +77,7 @@
   }
 
   .renumerator .half-block {
-    margin-top: 40px;
+    margin: 57px;
   }
 
   .renumerator .half-block span.title {
@@ -86,7 +103,7 @@
   .renumerator .flex span {
     font-size: 40px;
     font-weight: 900;
-    margin: 0 24px;
+    margin: 5px 18px;
   }
 
   .renumerator .title {
@@ -111,7 +128,7 @@
   * :global(.mdc-select__selected-text) {
     font-size: 16px;
     font-weight: 500;
-    font-family: Montserrat,serif;
+    font-family: Montserrat, serif;
   }
 
   * :global(.mdc-deprecated-list-item--selected) {

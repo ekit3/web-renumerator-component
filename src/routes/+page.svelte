@@ -10,12 +10,13 @@
   let rateManager: IRateManager = RateManagerFactory.create(company as Company);
   let selectedDevType: string;
   let experience: number;
+  let tjm: number;
   let amount: number;
-  $: amount = rateManager.getSalary(experience,selectedDevType) || 0;
+  $: amount = rateManager.getSalary(experience,selectedDevType,tjm) || 0;
 </script>
   <div class="component">
     <div class="block">
-      <Renumerator bind:selectedDevType bind:experience rateManager={rateManager} />
+      <Renumerator bind:selectedDevType bind:experience bind:tjm rateManager={rateManager} />
     </div>
     <div class="block">
       <Pay bind:amount />
@@ -41,5 +42,5 @@
   .block:nth-child(1){
     margin-right: 24px;
   }
- 
+
 </style>
