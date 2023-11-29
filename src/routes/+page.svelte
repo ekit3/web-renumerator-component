@@ -37,6 +37,8 @@
 
   .block {
     width: 50%;
+    position: relative;
+    z-index: 1;
   }
 
   .block:nth-child(1){
