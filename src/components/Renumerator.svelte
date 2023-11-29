@@ -109,6 +109,7 @@
 
   .renumerator .title {
     margin-bottom: 16px;
+    text-align: left;
   }
 
   .renumerator .container {
