@@ -43,4 +43,16 @@
     margin-right: 24px;
   }
 
+  @media screen and (max-width: 1280px) {
+    /* Styles pour les écrans de largeur 768px et plus */
+    .block {
+      width: 100%;
+      margin-bottom: 1.5em;
+    }
+    .component{
+      flex-direction: column;
+    }
+
+  }
+
 </style>

@@ -65,9 +65,8 @@
 
   .renumerator {
     display: flex;
-    padding: 80px 40px;
+    padding: 77px 40px;
     width: calc(100% - 80px);
-    height: calc(447px - 160px);
     flex-shrink: 0;
     border-radius: 32px;
     background: linear-gradient(180deg, #1D211A 0%, #1D2E0E 100%);
@@ -77,7 +76,9 @@
   }
 
   .renumerator .half-block {
-    margin: 57px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
 
   .renumerator .half-block span.title {
@@ -87,7 +88,7 @@
   }
 
   .renumerator .flex {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
   }
 
@@ -113,6 +114,8 @@
   .renumerator .container {
     display: flex;
     align-self: center;
+    width: 100%;
+    margin-top:40px;
   }
 
   /* overide selectBox */
