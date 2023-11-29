@@ -36,7 +36,7 @@
   }
 
   .block {
-    width: 40%;
+    width: 50%;
   }
 
   .block:nth-child(1){
