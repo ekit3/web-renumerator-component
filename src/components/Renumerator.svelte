@@ -35,12 +35,12 @@
       <div class="flex">
         <button on:click={() => experience = Math.max(minExperience, experience - 1)}
                 on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}>
-          <img src={minusSvg} alt="Minus Svg icon">
+          <img src={minusSvg} alt="Minus Svg icon" class="img-btn">
         </button>
         <span>{experience}</span>
         <button on:click={() => experience += 1}
                 on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}>
-          <img src={plusSvg} alt="Plus Svg icon">
+          <img src={plusSvg} alt="Plus Svg icon" class="img-btn">
         </button>
       </div>
     </div>
@@ -48,11 +48,11 @@
       <span class="title">TJM</span>
       <div class="flex">
         <button on:click={() => tjm = Math.max(minTjm, tjm - 10)}>
-          <img src={minusSvg} alt="Minus Svg icon">
+          <img src={minusSvg} alt="Minus Svg icon" class="img-btn">
         </button>
         <span>{tjm}</span>
         <button on:click={() => tjm += 10}>
-          <img src={plusSvg} alt="Plus Svg icon">
+          <img src={plusSvg} alt="Plus Svg icon" class="img-btn">
         </button>
       </div>
     </div>
@@ -79,17 +79,20 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    box-sizing: border-box;
   }
 
   .renumerator .half-block span.title {
     margin-bottom: 40px;
     text-align: center;
     display: block;
+    flex:1;
   }
 
   .renumerator .flex {
     justify-content: space-around;
     display: flex;
+    flex: 1;
   }
 
   .renumerator .flex button {
@@ -102,9 +105,9 @@
   }
 
   .renumerator .flex span {
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 900;
-    margin: 5px 18px;
+    margin: 5px 2px;
   }
 
   .renumerator .title {
@@ -202,6 +205,21 @@
   * :global(.shaped-outlined .mdc-notched-outline .mdc-notched-outline__notch) {
     border-color: rgba(255, 255, 255, 0.6);
   }
+
+  .img-btn {
+    width: 3em;
+  }
+
+  @media screen and (max-width: 380px) {
+    .img-btn {
+      width: 1.5em;
+    }
+    .renumerator .flex span {
+      font-size: 1.5em;
+    }
+
+  }
+
 
 </style>
   

@@ -36,6 +36,7 @@
   }
 
   .block {
+    min-width: 280px;
     width: 50%;
     position: relative;
     z-index: 1;

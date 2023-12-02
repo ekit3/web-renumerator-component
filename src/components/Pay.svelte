@@ -45,5 +45,11 @@
     font-size: 16px;
     font-weight: 700;
   }
+
+  @media screen and (max-width: 380px) {
+    .pay span.title{
+      font-size: 0.75em;
+    }
+  }
 </style>
   
