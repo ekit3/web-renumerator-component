@@ -25,6 +25,8 @@ body {
 }
 
 .in-ellipse{
+  min-width: 400vh;
+  min-height: 400vh;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -230,5 +232,41 @@ body {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .title{
+    font-size:0.5em;
+    line-height:	1rem;
+    top: 36%;
+  }
+
+  .brand{
+    font-size: 2em;
+  }
+
+
+  .in-ellipse .description {
+    font-size: 1em;
+    line-height: 0.175rem;
+    top: 55%;
+  }
+
+  .in-ellipse .logo {
+    left: 50%;
+    transform: translate(-50%, 25%);
+    width: 100%;
+  }
+
+
+  #hide {
+    margin-bottom: 90vh;
+  }
+
+  .content-title{
+    font-size: 1.5em;
+
   }
 }
