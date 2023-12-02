@@ -57,8 +57,8 @@ body {
   position: inherit;
   display: inline-block;
   width: 100%;
-  font-size: 3rem;
-  line-height: 0.175rem;
+  font-size: 2rem;
+  line-height: 1.175rem;
   top: 42%;
   text-align: center;
   z-index: 1;
@@ -237,8 +237,8 @@ body {
 
 
 @media screen and (max-width: 380px) {
-  .title{
-    font-size:0.5em;
+  .in-ellipse .title{
+    font-size:1.5em;
     line-height:	1rem;
     top: 36%;
   }
@@ -250,7 +250,7 @@ body {
 
   .in-ellipse .description {
     font-size: 1em;
-    line-height: 0.175rem;
+    line-height: 1.175rem;
     top: 55%;
   }
 
