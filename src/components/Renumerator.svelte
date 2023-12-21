@@ -31,7 +31,7 @@
 
   <div class="container">
     <div class="half-block">
-      <span class="title">Année d'expérience</span>
+      <span class="title">Années d'expérience</span>
       <div class="flex">
         <button on:click={() => experience = Math.max(minExperience, experience - 1)}
                 on:click={() => tjm = rateManager.updateTJM(experience, selectedDevType)}>

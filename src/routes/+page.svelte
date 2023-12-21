@@ -46,8 +46,9 @@
     margin-right: 24px;
   }
 
-  @media screen and (max-width: 1280px) {
-    /* Styles pour les écrans de largeur 768px et plus */
+  @media screen and (max-width: 1280px),
+        screen and (max-height: 720px){
+    /* Styles pour les écrans de largeur 1280px et plus */
     .block {
       width: 100%;
       margin-bottom: 1.5em;
