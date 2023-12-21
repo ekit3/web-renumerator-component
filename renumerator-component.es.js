@@ -912,7 +912,7 @@ const Ui = 2900, ji = 2, Bi = 0, Hi = 20, wi = 380, xi = [
     ]
   },
   {
-    name: "Facilitateur/Coordinateur de project",
+    name: "Facilitateur/Coordinateur de projet",
     tjmGrid: [
       {
         xp: 2,
@@ -13022,7 +13022,7 @@ function ul(n) {
       n[8]
     ), {
       c() {
-        e = K("div"), t = K("span"), t.textContent = "Votre métier", s = ye(), Se(i.$$.fragment), l = ye(), r = K("div"), o = K("div"), u = K("span"), u.textContent = "Année d'expérience", c = ye(), d = K("div"), f = K("button"), f.innerHTML = `<img src="${hs}" alt="Minus Svg icon" class="img-btn svelte-1s7v93f"/>`, m = ye(), h = K("span"), p = bt(
+        e = K("div"), t = K("span"), t.textContent = "Votre métier", s = ye(), Se(i.$$.fragment), l = ye(), r = K("div"), o = K("div"), u = K("span"), u.textContent = "Années d'expérience", c = ye(), d = K("div"), f = K("button"), f.innerHTML = `<img src="${hs}" alt="Minus Svg icon" class="img-btn svelte-1s7v93f"/>`, m = ye(), h = K("span"), p = bt(
           /*experience*/
           n[0]
         ), _ = ye(), E = K("button"), E.innerHTML = `<img src="${ms}" alt="Plus Svg icon" class="img-btn svelte-1s7v93f"/>`, b = ye(), M = K("div"), S = K("span"), S.textContent = "TJM", T = ye(), N = K("div"), L = K("button"), L.innerHTML = `<img src="${hs}" alt="Minus Svg icon" class="img-btn svelte-1s7v93f"/>`, V = ye(), ne = K("span"), U = bt(
@@ -13218,7 +13218,8 @@ class Bs extends Pe {
 }
 Ne(Bs, { amount: {} }, [], [], !0);
 function ml(n) {
-  Mn(n, "svelte-4hfcd4", ".component.svelte-4hfcd4{display:flex;justify-content:center;width:100%;color:#FFF;font-family:Montserrat,serif;font-size:16px;font-weight:500}.block.svelte-4hfcd4{min-width:280px;width:50%;position:relative;z-index:1}.block.svelte-4hfcd4:nth-child(1){margin-right:24px}@media screen and (max-width: 1280px){.block.svelte-4hfcd4{width:100%;margin-bottom:1.5em}.component.svelte-4hfcd4{flex-direction:column}}");
+  Mn(n, "svelte-1sqfk6p", `.component.svelte-1sqfk6p{display:flex;justify-content:center;width:100%;color:#FFF;font-family:Montserrat,serif;font-size:16px;font-weight:500}.block.svelte-1sqfk6p{min-width:280px;width:50%;position:relative;z-index:1}.block.svelte-1sqfk6p:nth-child(1){margin-right:24px}@media screen and (max-width: 1280px),
+        screen and (max-height: 720px){.block.svelte-1sqfk6p{width:100%;margin-bottom:1.5em}.component.svelte-1sqfk6p{flex-direction:column}}`);
 }
 function pl(n) {
   let e, t, s, i, a, l, r, o, u, c, d;
@@ -13251,7 +13252,7 @@ function pl(n) {
     n[3] !== void 0 && (E.amount = /*amount*/
     n[3]), u = new Bs({ props: E }), le.push(() => Rt(u, "amount", _)), {
       c() {
-        e = K("div"), t = K("div"), Se(s.$$.fragment), r = ye(), o = K("div"), Se(u.$$.fragment), Q(t, "class", "block svelte-4hfcd4"), Q(o, "class", "block svelte-4hfcd4"), Q(e, "class", "component svelte-4hfcd4");
+        e = K("div"), t = K("div"), Se(s.$$.fragment), r = ye(), o = K("div"), Se(u.$$.fragment), Q(t, "class", "block svelte-1sqfk6p"), Q(o, "class", "block svelte-1sqfk6p"), Q(e, "class", "component svelte-1sqfk6p");
       },
       m(b, M) {
         Y(b, e, M), z(e, t), Ie(s, t, null), z(e, r), z(e, o), Ie(u, o, null), d = !0;
