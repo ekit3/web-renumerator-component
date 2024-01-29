@@ -45,4 +45,8 @@ export abstract class RateManager implements IRateManager {
     }
     return this.config.tjm_base;
   }
+
+  public getJoinUsLink(): string {
+   return this.config.join_link;
+  }
 }

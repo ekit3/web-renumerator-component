@@ -1,13 +1,16 @@
 <script lang="ts">
+  import type {IRateManager} from "../interfaces/IRateManager";
+
   export let amount = 450;
+  export let rateManager: IRateManager;
 </script>
   
 <div class="pay">
   <span class="title">Votre salaire annuel brut</span>
   <span class="amount">{amount} €</span>
-  <button>Envie de nous rejoindre ?</button>
+  <a href="{rateManager.getJoinUsLink()}">Envie de nous rejoindre ?</a>
 </div>
-  
+
 <style>
   .pay {
     height: 447px;
@@ -34,7 +37,7 @@
     margin-bottom: 54px;
   }
 
-  .pay button {
+  .pay a {
     display: inline-flex;
     padding: 16px 24px;
     background-color: white;

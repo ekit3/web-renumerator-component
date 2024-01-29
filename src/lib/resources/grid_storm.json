@@ -4,6 +4,7 @@
   "min_salary": 0,
   "group_days": 15,
   "tjm_base": 450,
+  "join_link" : "#",
   "jobs": [
   ]
 }

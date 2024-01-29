@@ -10,4 +10,6 @@ export interface IRateManager {
   getSalary(experience: number,jobName: string, selectedTjm: number): number;
 
   updateTJM(experience: number,jobName: string): number;
+
+  getJoinUsLink(): string
 }

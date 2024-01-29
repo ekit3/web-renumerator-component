@@ -19,7 +19,7 @@
       <Renumerator bind:selectedDevType bind:experience bind:tjm rateManager={rateManager} />
     </div>
     <div class="block">
-      <Pay bind:amount />
+      <Pay bind:amount rateManager={rateManager}/>
     </div>
   </div>
 

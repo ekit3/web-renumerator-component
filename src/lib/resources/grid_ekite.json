@@ -4,6 +4,7 @@
   "min_salary": 0,
   "group_days": 20,
   "tjm_base": 380,
+  "join_link" : "https://ekite.info/#NousContacter",
   "jobs": [
     {
       "name": "Product Owner",
