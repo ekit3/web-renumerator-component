@@ -263,6 +263,31 @@ body {
     width: 80%;
   }
 
+ .in-ellipse .discover-btn {
+    position: inherit;
+    display: inline-block;
+    width: 100%;
+    font-size: 0.625em;
+    line-height: 0.175rem;
+    bottom: 4%;
+    text-align: center;
+    z-index: 1;
+    font-family: Montserrat, Helvetica, serif;
+    color: var(--primary-10);
+}
+
+ .discover-btn a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-color: var(--primary-10);
+    color: var(--primary-10);
+    background-color: var(--shadeslight-1);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
 
   #hide {
     margin-bottom: 90vh;
