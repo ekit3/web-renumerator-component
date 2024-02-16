@@ -240,26 +240,27 @@ body {
 @media screen and (max-width: 380px),
         screen and (max-height: 700px){
   .in-ellipse .title{
-    font-size:1.5em;
-    line-height:	1rem;
+    font-size:1em;
+    line-height:	0.75rem;
     top: 36%;
   }
 
   .brand{
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
 
   .in-ellipse .description {
-    font-size: 1em;
-    line-height: 1.175rem;
+    font-size: 0.75em;
+    line-height: 0.975rem;
     top: 55%;
   }
 
   .in-ellipse .logo {
     left: 50%;
     transform: translate(-50%, 25%);
-    width: 100%;
+    top: -210px;
+    width: 80%;
   }
 
 
@@ -268,7 +269,7 @@ body {
   }
 
   .content-title{
-    font-size: 1.5em;
+    font-size: 0.925em;
 
   }
 }
