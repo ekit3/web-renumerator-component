@@ -275,6 +275,10 @@ body {
     color: var(--primary-10);
 }
 
+.rounded-pill{
+  border-radius: 24px 
+}
+
  .discover-btn a {
     display: inline-block;
     text-decoration: none;
