@@ -178,7 +178,7 @@ body {
   background-color: var(--shadeslight-1);
   font-size: 1rem;
   border-radius: 24px;
-  padding: 0 20px;
+  padding: 5px 20px;
   color: var(--primary-10);
   font-weight: 400;
   margin-bottom: 1rem;
