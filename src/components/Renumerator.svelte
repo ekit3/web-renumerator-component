@@ -210,12 +210,20 @@
     width: 3em;
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 500px) {
     .img-btn {
       width: 1.5em;
     }
     .renumerator .flex span {
       font-size: 1.5em;
+    }
+
+    .renumerator .container{
+      flex-direction: column;
+    }
+
+    .renumerator .half-block{
+      width: 100%;
     }
 
   }
