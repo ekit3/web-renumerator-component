@@ -276,7 +276,8 @@ body {
 }
 
 .rounded-pill{
-  border-radius: 24px; 
+  border-radius: 24px;
+  font-size: 10px;
 }
 
  .discover-btn a {
