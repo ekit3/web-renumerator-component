@@ -51,7 +51,7 @@
   }
 
   .advantage{
-    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .pay a {
