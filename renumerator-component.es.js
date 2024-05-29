@@ -13179,7 +13179,7 @@ let Ui = class extends Ne {
 };
 Fe(Ui, { rateManager: {}, experience: {}, tjm: {}, selectedDevType: {} }, [], [], !0);
 function ml(n) {
-  Mn(n, "svelte-168b1pm", ".pay.svelte-168b1pm.svelte-168b1pm{height:447px;width:100%;background:#9FF000;border-radius:32px;font-size:24px;display:flex;flex-direction:column;justify-content:center;align-items:center}.pay.svelte-168b1pm span.title.svelte-168b1pm{margin-top:60px;color:#0E130B;margin-bottom:20px}.pay.svelte-168b1pm span.amount.svelte-168b1pm{color:#0E130B;font-weight:900;font-size:60px;margin-bottom:54px}.pay.svelte-168b1pm .joinLink.svelte-168b1pm{display:inline-flex;padding:16px 24px;background-color:white;border-radius:11px;border:0;color:#000;font-family:Montserrat,serif;font-size:16px;font-weight:700}.advantage.svelte-168b1pm.svelte-168b1pm{margin-bottom:20px}.pay.svelte-168b1pm a.svelte-168b1pm{color:#FFFFFF;margin-bottom:10px}@media screen and (max-width: 380px){.pay.svelte-168b1pm span.title.svelte-168b1pm{font-size:0.75em}}");
+  Mn(n, "svelte-30giui", ".pay.svelte-30giui.svelte-30giui{height:447px;width:100%;background:#9FF000;border-radius:32px;font-size:24px;display:flex;flex-direction:column;justify-content:center;align-items:center}.pay.svelte-30giui span.title.svelte-30giui{margin-top:60px;color:#0E130B;margin-bottom:20px}.pay.svelte-30giui span.amount.svelte-30giui{color:#0E130B;font-weight:900;font-size:60px;margin-bottom:54px}.pay.svelte-30giui .joinLink.svelte-30giui{display:inline-flex;padding:16px 24px;background-color:white;border-radius:11px;border:0;color:#000;font-family:Montserrat,serif;font-size:16px;font-weight:700}.advantage.svelte-30giui.svelte-30giui{margin-bottom:20px}.pay.svelte-30giui a.svelte-30giui{color:#000000;margin-bottom:10px}@media screen and (max-width: 380px){.pay.svelte-30giui span.title.svelte-30giui{font-size:0.75em}}");
 }
 function pl(n) {
   let e, t, i, s, a, l, r, o, u, c, d, f, m, h, p, _;
@@ -13188,9 +13188,9 @@ function pl(n) {
       e = J("div"), t = J("span"), t.textContent = "Votre salaire annuel brut", i = Se(), s = J("span"), a = at(
         /*amount*/
         n[0]
-      ), l = at(" €"), r = Se(), o = J("span"), u = at("et + de 9000€ d'"), c = J("a"), d = at("avantages sociaux"), m = Se(), h = J("a"), p = at("Envie de nous rejoindre ?"), W(t, "class", "title svelte-168b1pm"), W(s, "class", "amount svelte-168b1pm"), W(c, "href", f = /*rateManager*/
-      n[1].getAvantagesLink()), W(c, "class", "svelte-168b1pm"), W(o, "class", "advantage svelte-168b1pm"), W(h, "class", "joinLink svelte-168b1pm"), W(h, "href", _ = /*rateManager*/
-      n[1].getJoinUsLink()), W(e, "class", "pay svelte-168b1pm");
+      ), l = at(" €"), r = Se(), o = J("span"), u = at("et + de 9000€ d'"), c = J("a"), d = at("avantages sociaux"), m = Se(), h = J("a"), p = at("Envie de nous rejoindre ?"), W(t, "class", "title svelte-30giui"), W(s, "class", "amount svelte-30giui"), W(c, "href", f = /*rateManager*/
+      n[1].getAvantagesLink()), W(c, "class", "svelte-30giui"), W(o, "class", "advantage svelte-30giui"), W(h, "class", "joinLink svelte-30giui"), W(h, "href", _ = /*rateManager*/
+      n[1].getJoinUsLink()), W(e, "class", "pay svelte-30giui");
     },
     m(E, b) {
       Y(E, e, b), H(e, t), H(e, i), H(e, s), H(s, a), H(s, l), H(e, r), H(e, o), H(o, u), H(o, c), H(c, d), H(e, m), H(e, h), H(h, p);
