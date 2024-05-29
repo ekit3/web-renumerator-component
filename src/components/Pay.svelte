@@ -55,7 +55,7 @@
   }
 
   .pay a {
-    color: #FFFFFF;
+    color: #000000;
     margin-bottom: 10px;
   }
 
