@@ -9,7 +9,7 @@
   <span class="title">Votre salaire annuel brut</span>
   <span class="amount">{amount} €</span>
   <span class="advantage">et + de 9000€ d'<a href="{rateManager.getAvantagesLink()}">avantages sociaux</a></span>
-  <a href="{rateManager.getJoinUsLink()}">Envie de nous rejoindre ?</a>
+  <a class="joinLink" href="{rateManager.getJoinUsLink()}">Envie de nous rejoindre ?</a>
 </div>
 
 <style>
@@ -38,7 +38,7 @@
     margin-bottom: 54px;
   }
 
-  .pay a {
+  .pay .joinLink {
     display: inline-flex;
     padding: 16px 24px;
     background-color: white;
@@ -52,6 +52,11 @@
 
   .advantage{
     font-size: 14px;
+  }
+
+  .pay a {
+    color: #FFFFFF;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 380px) {
