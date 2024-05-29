@@ -123,6 +123,29 @@ body {
   margin-top: 5em;
 }
 
+.simulateur-btn{
+  background: #FFFFFF;
+  border-radius: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  padding: 16px 24px;
+}
+
+.advantages-btn{
+  margin-left: 10px;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 768px) {
   /* Styles pour les écrans de largeur 768px et plus */
