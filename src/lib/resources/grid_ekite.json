@@ -5,6 +5,7 @@
   "group_days": 20,
   "tjm_base": 380,
   "join_link" : "https://ekite.info/#NousContacter",
+  "avantages_link":"https://ekite.info/simulateur/#avantages",
   "jobs": [
     {
       "name": "Product Owner",

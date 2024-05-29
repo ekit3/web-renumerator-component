@@ -1,4 +1,5 @@
 export interface SalaryConfig {
+	avantages_link: string
 	join_link: string
 	fixed_salary: number
 	min_experience: number

@@ -12,4 +12,6 @@ export interface IRateManager {
   updateTJM(experience: number,jobName: string): number;
 
   getJoinUsLink(): string
+
+  getAvantagesLink(): string
 }
