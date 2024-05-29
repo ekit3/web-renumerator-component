@@ -35,8 +35,9 @@ body {
 .content-description {
   text-align: left;
   width: 100%;
+  font-size: 1.5em;
   padding: 0 50px 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .content-intro{
