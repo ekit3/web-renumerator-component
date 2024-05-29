@@ -52,6 +52,7 @@
 
   .advantage{
     margin-bottom: 20px;
+    color: #000000;
   }
 
   .pay a {
