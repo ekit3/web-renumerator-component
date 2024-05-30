@@ -3,9 +3,11 @@
 
   export let amount = 450;
   export let rateManager: IRateManager;
+
+  import ekite_logo from '../images/remunerator_background.svg'
 </script>
   
-<div class="pay">
+<div class="pay" style="background: url({ekite_logo}) no-repeat bottom, #9FF000">
   <span class="title">Votre salaire annuel brut</span>
   <span class="amount">{amount} €</span>
   <span class="advantage">et + de 9000€ d'<a href="{rateManager.getAvantagesLink()}">avantages sociaux</a></span>
@@ -14,7 +16,7 @@
 
 <style>
   .pay {
-    height: 447px;
+    height: 100%;
     width: 100%;
     background: #9FF000;
     border-radius: 32px;
@@ -23,6 +25,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: 100% 100% !important;
+    font-weight: 900;
+    flex: 1;
   }
 
   .pay span.title {
