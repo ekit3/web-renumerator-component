@@ -921,7 +921,7 @@ const Fs = 2900, Ps = 2, xs = 0, ws = 20, Bs = 380, Hs = "https://ekite.info/#No
     ]
   },
   {
-    name: "QA",
+    name: "Quality engineer",
     tjmGrid: [
       {
         xp: 2,
@@ -962,7 +962,7 @@ const Fs = 2900, Ps = 2, xs = 0, ws = 20, Bs = 380, Hs = "https://ekite.info/#No
     ]
   },
   {
-    name: "QL",
+    name: "Quality Leader",
     tjmGrid: [
       {
         xp: 2,
